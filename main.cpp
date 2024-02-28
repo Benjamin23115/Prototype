@@ -60,10 +60,10 @@ void runTM()
     cout << inputNum << endl;
     cout << "Inital ID: [s0]ab" << endl;
     cout << "0: [s0]ab" << endl;
-    cout << "1: X[s1]b" << endl;
-    cout << "2: [s2]XY" << endl;
-    cout << "3: X[s0]Y" << endl;
-    cout << "4: XY[s3]" << endl;
+    // cout << "1: X[s1]b" << endl;
+    // cout << "2: [s2]XY" << endl;
+    // cout << "3: X[s0]Y" << endl;
+    // cout << "4: XY[s3]" << endl;
     cout << "5: XY-[s4]" << endl;
     cout << "Input String \"ab\" accepted in 5 Transitions" << endl;
     return;
@@ -81,7 +81,7 @@ void setTMTransitions()
 void quitTM()
 {
     cout << "5 Transitions Preformed" << endl;
-    cout << "String \"ab\" is Accepted" << endl;
+    cout << "String \"ab\" is neither Accepted or Denied" << endl;
 }
 
 void truncateTM()
@@ -182,6 +182,7 @@ int main(int argc, char const *argv[])
             break;
 
         default:
+            cout << rawCommandInput << " is an invalid command!" << endl;
             break;
         }
     }
